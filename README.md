@@ -1,38 +1,38 @@
 # Foggy Wallpaper — HUB Void Smoke
 
-Fond d'écran animé généré en HTML/Canvas pour le HUB Institute. Il affiche une simulation de fumée brumeuse avec un logo centré flottant, le tout rendu en temps réel via l'API Canvas.
+An animated HTML/Canvas wallpaper for HUB Institute. It renders a real-time smoky fog simulation with a centered floating logo, built entirely with the Canvas API — no external dependencies.
 
-## Aperçu
+## Preview
 
-- Fond sombre (`#010130`) avec particules de fumée animées
-- Logo HUB Institute centré avec effet corona lumineux
-- Animation fluide en pur JavaScript, sans dépendance externe
+- Dark background (`#010130`) with animated smoke particles
+- Centered HUB Institute logo with a glowing corona effect
+- Smooth animation in pure JavaScript
 
-## Structure
+## Project Structure
 
 ```
 .
-├── HUB_VoidSmoke_Wallpaper.html   # Page principale (animation Canvas)
-├── server.js                      # Serveur HTTP Node.js minimal
-├── package.json                   # Métadonnées du projet
-└── Procfile                       # Commande de démarrage (Heroku / Railway)
+├── HUB_VoidSmoke_Wallpaper.html   # Main page (Canvas animation)
+├── server.js                      # Minimal Node.js HTTP server
+├── package.json                   # Project metadata
+└── Procfile                       # Start command (Heroku / Railway)
 ```
 
-## Lancer en local
+## Run Locally
 
-Assure-toi d'avoir **Node.js ≥ 18** installé, puis :
+Make sure you have **Node.js ≥ 18** installed, then:
 
 ```bash
 npm start
 ```
 
-Le serveur démarre sur [http://localhost:3000](http://localhost:3000).
+The server starts at [http://localhost:3000](http://localhost:3000).
 
-La variable d'environnement `PORT` est respectée si elle est définie.
+The `PORT` environment variable is respected if set.
 
-## Déploiement
+## Deployment
 
-Le `Procfile` inclus permet un déploiement direct sur des plateformes compatibles (Heroku, Railway, Render…) :
+The included `Procfile` enables one-click deployment on compatible platforms (Heroku, Railway, Render…):
 
 ```
 web: node server.js
